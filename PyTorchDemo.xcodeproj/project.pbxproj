@@ -13,9 +13,18 @@
 		931687D528354AAF00A5D0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931687D328354AAF00A5D0D2 /* Main.storyboard */; };
 		931687D728354AB100A5D0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931687D628354AB100A5D0D2 /* Assets.xcassets */; };
 		931687DA28354AB100A5D0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931687D828354AB100A5D0D2 /* LaunchScreen.storyboard */; };
+		931687E528354F4500A5D0D2 /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 931687E328354F4500A5D0D2 /* TorchModule.mm */; };
+		931687E728356EF300A5D0D2 /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931687E628356EF300A5D0D2 /* Predictor.swift */; };
+		931687E928357A1200A5D0D2 /* CVPixelBuffer+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931687E828357A1200A5D0D2 /* CVPixelBuffer+Helper.swift */; };
+		931687ED283580D400A5D0D2 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 931687EB283580D400A5D0D2 /* labels.txt */; };
+		931687EE283580D400A5D0D2 /* model_mobilnet_v2.pt in Resources */ = {isa = PBXBuildFile; fileRef = 931687EC283580D400A5D0D2 /* model_mobilnet_v2.pt */; };
+		931687F02835961300A5D0D2 /* mobilenet_quantized.pt in Resources */ = {isa = PBXBuildFile; fileRef = 931687EF2835961300A5D0D2 /* mobilenet_quantized.pt */; };
+		B884471212FFDE8B04656A69 /* Pods_PyTorchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C26511F526FA9A06ED43C0 /* Pods_PyTorchDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3ED8DCD7EDCEFFB53F854E76 /* Pods-PyTorchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyTorchDemo.debug.xcconfig"; path = "Target Support Files/Pods-PyTorchDemo/Pods-PyTorchDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		66C26511F526FA9A06ED43C0 /* Pods_PyTorchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PyTorchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		931687CA28354AAF00A5D0D2 /* PyTorchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyTorchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		931687CD28354AAF00A5D0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		931687CF28354AAF00A5D0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,15 @@
 		931687D628354AB100A5D0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931687D928354AB100A5D0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		931687DB28354AB100A5D0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		931687E228354F4500A5D0D2 /* PyTorchDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyTorchDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		931687E328354F4500A5D0D2 /* TorchModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = SOURCE_ROOT; };
+		931687E428354F4500A5D0D2 /* TorchModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = SOURCE_ROOT; };
+		931687E628356EF300A5D0D2 /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		931687E828357A1200A5D0D2 /* CVPixelBuffer+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helper.swift"; sourceTree = "<group>"; };
+		931687EB283580D400A5D0D2 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = SOURCE_ROOT; };
+		931687EC283580D400A5D0D2 /* model_mobilnet_v2.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_mobilnet_v2.pt; sourceTree = SOURCE_ROOT; };
+		931687EF2835961300A5D0D2 /* mobilenet_quantized.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobilenet_quantized.pt; sourceTree = SOURCE_ROOT; };
+		CB291541D8B5CB435ED13A4A /* Pods-PyTorchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyTorchDemo.release.xcconfig"; path = "Target Support Files/Pods-PyTorchDemo/Pods-PyTorchDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B884471212FFDE8B04656A69 /* Pods_PyTorchDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E7C99951D5B494FD9087F7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ED8DCD7EDCEFFB53F854E76 /* Pods-PyTorchDemo.debug.xcconfig */,
+				CB291541D8B5CB435ED13A4A /* Pods-PyTorchDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		931687C128354AAF00A5D0D2 = {
 			isa = PBXGroup;
 			children = (
 				931687CC28354AAF00A5D0D2 /* PyTorchDemo */,
 				931687CB28354AAF00A5D0D2 /* Products */,
+				6E7C99951D5B494FD9087F7A /* Pods */,
+				9B3EABED779B2D78EBF91139 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,8 @@
 		931687CC28354AAF00A5D0D2 /* PyTorchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				931687EA2835803300A5D0D2 /* Model */,
+				931687E128354DFA00A5D0D2 /* LibTorchBridge */,
 				931687CD28354AAF00A5D0D2 /* AppDelegate.swift */,
 				931687CF28354AAF00A5D0D2 /* SceneDelegate.swift */,
 				931687D128354AAF00A5D0D2 /* ViewController.swift */,
@@ -63,8 +95,38 @@
 				931687D628354AB100A5D0D2 /* Assets.xcassets */,
 				931687D828354AB100A5D0D2 /* LaunchScreen.storyboard */,
 				931687DB28354AB100A5D0D2 /* Info.plist */,
+				931687E628356EF300A5D0D2 /* Predictor.swift */,
+				931687E828357A1200A5D0D2 /* CVPixelBuffer+Helper.swift */,
 			);
 			path = PyTorchDemo;
+			sourceTree = "<group>";
+		};
+		931687E128354DFA00A5D0D2 /* LibTorchBridge */ = {
+			isa = PBXGroup;
+			children = (
+				931687E428354F4500A5D0D2 /* TorchModule.h */,
+				931687E328354F4500A5D0D2 /* TorchModule.mm */,
+				931687E228354F4500A5D0D2 /* PyTorchDemo-Bridging-Header.h */,
+			);
+			path = LibTorchBridge;
+			sourceTree = "<group>";
+		};
+		931687EA2835803300A5D0D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				931687EF2835961300A5D0D2 /* mobilenet_quantized.pt */,
+				931687EC283580D400A5D0D2 /* model_mobilnet_v2.pt */,
+				931687EB283580D400A5D0D2 /* labels.txt */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B3EABED779B2D78EBF91139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66C26511F526FA9A06ED43C0 /* Pods_PyTorchDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +136,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 931687DE28354AB100A5D0D2 /* Build configuration list for PBXNativeTarget "PyTorchDemo" */;
 			buildPhases = (
+				C3F792AEDF719A442D2853E5 /* [CP] Check Pods Manifest.lock */,
 				931687C628354AAF00A5D0D2 /* Sources */,
 				931687C728354AAF00A5D0D2 /* Frameworks */,
 				931687C828354AAF00A5D0D2 /* Resources */,
@@ -99,6 +162,7 @@
 				TargetAttributes = {
 					931687C928354AAF00A5D0D2 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -126,21 +190,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				931687DA28354AB100A5D0D2 /* LaunchScreen.storyboard in Resources */,
+				931687F02835961300A5D0D2 /* mobilenet_quantized.pt in Resources */,
+				931687EE283580D400A5D0D2 /* model_mobilnet_v2.pt in Resources */,
 				931687D728354AB100A5D0D2 /* Assets.xcassets in Resources */,
+				931687ED283580D400A5D0D2 /* labels.txt in Resources */,
 				931687D528354AAF00A5D0D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C3F792AEDF719A442D2853E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PyTorchDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		931687C628354AAF00A5D0D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931687E528354F4500A5D0D2 /* TorchModule.mm in Sources */,
 				931687D228354AAF00A5D0D2 /* ViewController.swift in Sources */,
 				931687CE28354AAF00A5D0D2 /* AppDelegate.swift in Sources */,
+				931687E928357A1200A5D0D2 /* CVPixelBuffer+Helper.swift in Sources */,
 				931687D028354AAF00A5D0D2 /* SceneDelegate.swift in Sources */,
+				931687E728356EF300A5D0D2 /* Predictor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +379,15 @@
 		};
 		931687DF28354AB100A5D0D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED8DCD7EDCEFFB53F854E76 /* Pods-PyTorchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2JKKE59VQN;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PyTorchDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,6 +403,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vazkir.PyTorchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PyTorchDemo/LibTorchBridge/PyTorchDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,12 +412,15 @@
 		};
 		931687E028354AB100A5D0D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB291541D8B5CB435ED13A4A /* Pods-PyTorchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2JKKE59VQN;
+				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PyTorchDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vazkir.PyTorchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PyTorchDemo/LibTorchBridge/PyTorchDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
